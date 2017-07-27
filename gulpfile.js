@@ -151,8 +151,14 @@ gulp.task('js', function (cb) {
         gulp.src('dev/**/*.js')
             .pipe(watch('dev/**/*.js'))
             .pipe(perprocessSet())
-            .pipe(ifIsNotDebug(uglify().on('error', function (error) {
-                uglify.logError()
+            .pipe(ifIsNotDebug(jsMinify({
+                ie8: true,
+                mangle: {
+                    toplevel: true,
+                    eval: true
+                },
+                compress: true,
+                warnings: 'verbose'
             })))
             .pipe(gulp.dest(destDir))
     } else {
@@ -166,8 +172,6 @@ gulp.task('js', function (cb) {
                 },
                 compress: true,
                 warnings: 'verbose'
-            }).on('error', function (error) {
-                uglify.logError()
             })))
             .pipe(gulp.dest(destDir))
     }
