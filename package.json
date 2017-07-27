@@ -1,0 +1,44 @@
+{
+  "name": "gulp-simple-wolkflow-multi-host",
+  "version": "1.0.0",
+  "description": "a workflow for simple pages ,with multi host",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev --watch --debug",
+    "build-all": "gulp build --output --host test && gulp build --output --host qa && gulp build --output --host pe",
+    "build": "gulp build --output --host"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentmrlau/gulp-simple-wolkflow-multi-host.git"
+  },
+  "author": "vincent lau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentmrlau/gulp-simple-wolkflow-multi-host/issues"
+  },
+  "homepage": "https://github.com/vincentmrlau/gulp-simple-wolkflow-multi-host#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "chalk": "^2.0.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-html-postcss": "^7.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7",
+    "postcss-less": "^1.1.0",
+    "postcss-sass": "^0.2.0",
+    "postcss-scss": "^1.0.2",
+    "run-sequence": "^2.1.0",
+    "sugarss": "^1.0.0",
+    "uglify-js": "^3.0.26"
+  }
+}

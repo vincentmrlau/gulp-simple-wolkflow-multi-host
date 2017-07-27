@@ -1,0 +1,23 @@
+.
+├── README.md
+├── dev
+│   ├── example.js
+│   └── index.html
+├── dist
+│   ├── example.js
+│   └── index.html
+├── gulpfile.js
+├── output
+│   ├── pe
+│   │   ├── example.js
+│   │   └── index.html
+│   ├── qa
+│   │   ├── example.js
+│   │   └── index.html
+│   └── test
+│       ├── example.js
+│       └── index.html
+├── package.json
+└── tree.txt
+
+20 directories, 40 files

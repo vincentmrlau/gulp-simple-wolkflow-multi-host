@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<!-- @if HOST_ENV='test' -->
+<script charset="UTF-8">
+    window._hostname = 'http://testhost'
+</script>
+<!-- @endif-->
+<!-- @if HOST_ENV='qa' -->
+<script charset="UTF-8">
+    window._hostname = 'https://qahost'
+</script>
+<!-- @endif-->
+<!-- @if HOST_ENV='pe' -->
+<script charset="UTF-8">
+    window._hostname = 'https://pehost '
+</script>
+<!-- @endif-->
+<p>
+    hello man
+</p>
+
+<script>
+
+</script>
+</body>
+</html>
