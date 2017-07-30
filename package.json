@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev --watch --debug",
+    "dev-host": "gulp dev --watch --debug --host",
     "build-all": "gulp build --output --host test && gulp build --output --host qa && gulp build --output --host pe",
     "build": "gulp build --output --host"
   },

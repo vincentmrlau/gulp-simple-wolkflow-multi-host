@@ -56,7 +56,7 @@ host = 'testhost'
 npm run dev
 
 ## 调试指定的域名,可选host test qa pe （gulpfile.js里面配置）
-npm run dev --host test
+npm run dev-host test
 
 ```
 
